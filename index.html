@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="nemo.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('#proxima-etapa-experiencia-profissional').click(function(){
+          $('#dados-pessoais').hide();
+          $('#experiencia-profissional').show();
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h1>Nemo</h1>
+
+      <section id="dados-pessoais">
+        <h2>Queremos te conhecer melhor</h2>
+
+        <p>
+          <label>Como prefere ser chamada(o) <br />
+            <input type="text" name="name" value="" />
+          </label>
+        </p>
+
+        <p>
+          <label>Email para contato <br />
+            <input type="email" name="email" value="" />
+          </label>
+        </p>
+
+        <p>
+          Telefone para contato
+        </p>
+
+        <p>
+          Cidade onde mora
+        </p>
+
+        <p>
+          Em qual dos nossos escritórios você tem disponibilidade para atuar?
+        </p>
+
+        <a href="#" id="proxima-etapa-experiencia-profissional">Próxima etapa</a>
+      </section>
+
+      <section id="experiencia-profissional">
+        <h2>Queremos saber sua experiência profissional</h2>
+      </section>
+
+    </div>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

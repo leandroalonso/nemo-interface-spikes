@@ -1,0 +1,11 @@
+body {
+  font: 18px 'Open Sans';
+}
+
+#experiencia-profissional {
+  display: none;
+}
+
+input[type=text], input[type=email] {
+  width: 400px;
+}
