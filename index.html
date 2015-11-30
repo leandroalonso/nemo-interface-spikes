@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Nemo - Interface</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -24,6 +24,12 @@
           $('#experiencia-profissional').show();
           return false;
         });
+
+        $('.show-phone-alternative').click(function(){
+          $(this).hide();
+          $('.phone-alternative').show();
+          return false;
+        });
       });
     </script>
   </head>
@@ -31,37 +37,47 @@
 
     <div class="container">
 
-      <h1>Nemo</h1>
+      <h1>ThoughtWorks</h1>
 
+      <form action="#">
       <section id="dados-pessoais">
-        <h2>Queremos te conhecer melhor</h2>
+        <h2>Sobre você</h2>
+
+        <p>Olá! Primeiramente, gostaríamos de algumas informações importantes para identificá-lo e entrarmos em contato assim que possível.</p>
 
         <p>
-          <label>Como prefere ser chamada(o) <br />
-            <input type="text" name="name" value="" />
+          <label>Como você gostaria de ser chamada(o)? *<br />
+            <input type="text" name="name" value="" required />
           </label>
         </p>
 
         <p>
-          <label>Email para contato <br />
-            <input type="email" name="email" value="" />
+          <label>Qual seu e-mail? *<br />
+            <input type="email" name="email" value="" required />
           </label>
         </p>
 
         <p>
-          <label>Telefone para contato <br />
-            <input type="text" name="phone" value="" />
+          <label>Qual seu telefone principal? *<br />
+            <input type="text" name="phone" value="" required />
+          </label><br />
+          <a class="show-phone-alternative" href="#">Adicionar telefone alternativo</a>
+          <span class="phone-alternative"><input type="text" name="phone-alternative" value="" /></span>
+        </p>
+
+        <p>
+          <label>Onde você mora? *<br />
+            <input type="text" name="city" value="" required />
           </label>
         </p>
 
         <p>
-          <label>Cidade onde mora <br />
-            <input type="text" name="city" value="" />
+          <label>Em quais dos nossos escritórios você teria disponibilidade para atuar? *<br />
+            <label><input type="checkbox" name="office-city" value="belo-horizonte" /> Belo Horizonte</label><br />
+            <label><input type="checkbox" name="office-city" value="porto-alegre" /> Porto Alegre</label><br />
+            <label><input type="checkbox" name="office-city" value="recife" /> Recife</label><br />
+            <label><input type="checkbox" name="office-city" value="sao-paulo" /> São Paulo</label>
           </label>
-        </p>
-
-        <p>
-          Em qual dos nossos escritórios você tem disponibilidade para atuar?
         </p>
 
         <a href="#" id="proxima-etapa-experiencia-profissional">Próxima etapa</a>
@@ -70,6 +86,9 @@
       <section id="experiencia-profissional">
         <h2>Queremos saber sua experiência profissional</h2>
       </section>
+
+      <input type="submit" name="name" value="Finalizar" />
+    </form>
 
     </div>
 

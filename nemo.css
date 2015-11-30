@@ -8,4 +8,13 @@ body {
 
 input[type=text], input[type=email] {
   width: 400px;
+  padding: 5px;
+}
+
+.phone-alternative {
+  display: none;
+}
+
+label {
+  font-weight: normal;
 }
