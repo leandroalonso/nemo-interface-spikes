@@ -37,48 +37,48 @@
 
     <div class="container">
 
-      <h1>ThoughtWorks</h1>
+      <h1>Mude a cara do mercado de TI</h1>
 
       <form action="#">
       <section id="dados-pessoais">
-        <h2>Sobre você</h2>
+        <fieldset>
+        <legend><h2>Sobre você</h2></legend>
+<!--        <h2>Sobre você</h2> -->
 
-        <p>Olá! Primeiramente, gostaríamos de algumas informações importantes para identificá-lo e entrarmos em contato assim que possível.</p>
-
+        <p>A ThoughtWorks está sempre procurando pessoas inspiradoras que tenham paixão pelo que fazem e estejam comprometidas em buscar as melhores soluções para nossos clientes.
+Você se identifica com esse cenário? Então ajude-nos a lhe conhecer um pouco melhor nessa etapa inicial!</p>
         <p>
-          <label>Como você gostaria de ser chamada(o)? *<br />
-            <input type="text" name="name" value="" required />
-          </label>
+          <label for="name">Como você gostaria de ser chamada(o)? *</label><br />
+            <input type="text" name="name" id="name" required />
         </p>
 
         <p>
-          <label>Qual seu e-mail? *<br />
-            <input type="email" name="email" value="" required />
-          </label>
+          <label for="email">Qual email de contato você deseja usar durante o processo? *</label><br />
+            <input type="email" name="email" id="email" required />
         </p>
 
         <p>
-          <label>Qual seu telefone principal? *<br />
-            <input type="text" name="phone" value="" required />
-          </label><br />
+          <label for="telefone">E o telefone para contato? *</label><br />
+            <input type="text" name="phone" id="telefone" required />
+            <br />
           <a class="show-phone-alternative" href="#">Adicionar telefone alternativo</a>
           <span class="phone-alternative"><input type="text" name="phone-alternative" value="" /></span>
         </p>
 
         <p>
-          <label>Onde você mora? *<br />
-            <input type="text" name="city" value="" required />
-          </label>
+          <label for="city">Onde você mora? *</label<br />
+            <input type="text" name="city" id="city" required />
         </p>
-
+        </fieldset>
+        <fieldset>
+        <legend>Em quais dos nossos escritórios você teria disponibilidade para atuar? *</legend>
         <p>
-          <label>Em quais dos nossos escritórios você teria disponibilidade para atuar? *<br />
             <label><input type="checkbox" name="office-city" value="belo-horizonte" /> Belo Horizonte</label><br />
             <label><input type="checkbox" name="office-city" value="porto-alegre" /> Porto Alegre</label><br />
             <label><input type="checkbox" name="office-city" value="recife" /> Recife</label><br />
             <label><input type="checkbox" name="office-city" value="sao-paulo" /> São Paulo</label>
-          </label>
         </p>
+        </fieldset>
 
         <a href="#" id="proxima-etapa-experiencia-profissional">Próxima etapa</a>
       </section>
