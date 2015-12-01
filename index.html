@@ -28,6 +28,7 @@
         $('.show-phone-alternative').click(function(){
           $(this).hide();
           $('.phone-alternative').show();
+          $('#phone2').focus();
           return false;
         });
       });
@@ -43,7 +44,6 @@
       <section id="dados-pessoais">
         <fieldset>
         <legend><h2>Sobre você</h2></legend>
-<!--        <h2>Sobre você</h2> -->
 
         <p>A ThoughtWorks está sempre procurando pessoas inspiradoras que tenham paixão pelo que fazem e estejam comprometidas em buscar as melhores soluções para nossos clientes.
 Você se identifica com esse cenário? Então ajude-nos a lhe conhecer um pouco melhor nessa etapa inicial!</p>
@@ -58,11 +58,11 @@ Você se identifica com esse cenário? Então ajude-nos a lhe conhecer um pouco
         </p>
 
         <p>
-          <label for="telefone">E o telefone para contato? *</label><br />
-            <input type="text" name="phone" id="telefone" required />
+          <label for="phone">E o telefone para contato? *</label><br />
+            <input type="text" name="phone" id="phone" required />
             <br />
           <a class="show-phone-alternative" href="#">Adicionar telefone alternativo</a>
-          <span class="phone-alternative"><input type="text" name="phone-alternative" value="" /></span>
+          <span class="phone-alternative"><label for="phone2">Telefone alternativo</label><input type="text" name="phone-alternative" id="phone2" /></span>
         </p>
 
         <p>
