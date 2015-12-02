@@ -40,6 +40,11 @@
             $('.wrong-email').hide();
           }
         });
+
+        $('#dados-pessoais-form').submit(function(){
+          $('.feedback').hide();
+          return false; 
+        });
       });
     </script>
   </head>
@@ -49,7 +54,7 @@
 
       <h1>Mude a cara do mercado de TI</h1>
 
-      <form action="#">
+      <form action="#" id="dados-pessoais-form">
       <section id="dados-pessoais">
         <fieldset>
         <legend><h2>Sobre você</h2></legend>
