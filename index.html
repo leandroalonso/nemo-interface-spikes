@@ -31,6 +31,15 @@
           $('#phone2').focus();
           return false;
         });
+
+        $('#email').blur(function(){
+          val = $(this).val();
+          if (!/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i.test(val)) {
+            $('.wrong-email').show();
+          } else {
+            $('.wrong-email').hide();
+          }
+        });
       });
     </script>
   </head>
@@ -55,6 +64,7 @@ Você se identifica com esse cenário? Então ajude-nos a lhe conhecer um pouco
         <p>
           <label for="email">Qual email de contato você deseja usar durante o processo? *</label><br />
             <input type="email" name="email" id="email" required />
+            <span class="feedback wrong-email" style="color:#B11623;">O email informado é inválido!</span>
         </p>
 
         <p>
@@ -66,7 +76,7 @@ Você se identifica com esse cenário? Então ajude-nos a lhe conhecer um pouco
         </p>
 
         <p>
-          <label for="city">Onde você mora? *</label<br />
+        <label for="city">Onde você mora? *</label><br />
             <input type="text" name="city" id="city" required />
         </p>
         </fieldset>

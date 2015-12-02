@@ -18,3 +18,7 @@ input[type=text], input[type=email] {
 label {
   font-weight: normal;
 }
+
+.feedback {
+  display: none;
+}
